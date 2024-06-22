@@ -1,0 +1,22 @@
+IF "hungry"
+    DO "eat"     ->dijalankan jika if benar
+DISPLAY "i am happy"
+
+
+hungry -> eat -> happy
+not hungry -> happy
+
+
+=============================
+
+
+STORE "score" to any number
+
+IF "score" < 70
+    DO "learn more"            -> dijakankan jika if benar
+ELSE 
+    DO "reward myself"         -> dijakankan jika if salah
+DO "continue with life..."     -> apapun kejadiannya akan dijalankan
+
+50 -> learn more -> continue with life 
+80 -> reward myself -> continue with life

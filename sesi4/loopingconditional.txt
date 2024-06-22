@@ -1,0 +1,44 @@
+1 ODD!
+2 EVEN!
+3 ODD!
+4 EVEN!
+...
+10 EVEN!
+
+
+sisa bagi angka genap/2  = 0
+sisa bagi angka ganjil/2 = 1
+
+MODULO %
+
+3 MODULO 2 = 1
+8 MODULO 5 = 3
+13 MODULO 5 = 3
+
+angka ganjil MODULO 2 = 1
+angka genap MODULO 2 = 0
+
+
+=================================
+STORE "count" with 1
+
+WHILE "count" <= 10
+    DISPLAY "count"
+    COMPUTE "count" modulo 2
+    STORE "remainder" to result of calculation
+    IF "remainder" equals 0
+        DISPLAY "EVEN!"
+    ELSE
+        DISPLAY "ODD!"
+    ADD "count" with 1
+    STORE "count" to the result of calculation
+
+
+1
+2
+3
+4
+5
+6
+...
+10
