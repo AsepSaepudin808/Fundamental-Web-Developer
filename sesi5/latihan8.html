@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conditional</title>
+</head>
+<body>
+    <script>
+        function hitung_grade(nilai) { // nilai = parameter
+            let grade = "";
+            if (nilai >= 90) {
+                grade = "A";
+            } else if (nilai >= 80) {
+                grade = "B";
+            } else if (nilai >= 70) {
+                grade = "C";
+            } else if (nilai>=60) {
+                grade = "D";
+            } else {
+                grade = "E";
+            }
+            return grade;
+        }
+        console.log(hitung_grade(60));      //D
+        console.log(hitung_grade(97));      //A
+        console.log(hitung_grade(54));      //E
+        console.log(hitung_grade(64));      //D
+        console.log(hitung_grade(20));      //E
+        console.log(hitung_grade(100));     //A
+        console.log(hitung_grade(74));      //C
+
+        let nilai = prompt("Masukkan Nilai:");
+        document.write(hitung_grade(nilai));
+    </script>
+</body>
+</html>

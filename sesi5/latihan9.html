@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conditional Input</title>
+</head>
+<body>
+    <label>Kondisi: </label>
+    <input type="text" id="kondisi">
+    <button onclick="cekLapar()">Cek Lapar</button>
+    <div id="hasil"></div>
+
+    <script>
+        function cekLapar() {
+            // = memasukkan nilai variable
+            let kondisi = document.getElementById("kondisi").value;
+            let hasil;
+            // 1 == "1" , == membandingkan nilai, tanpa melihat tipe data
+            // ===, membandingkan nilai, tipe data harus sama persis
+            if (kondisi === "lapar") {
+                hasil = "Waktu Makan";
+            } else if (kondisi === "tidak lapar") {
+                hasil = "Bukan Waktu Makan";
+            } else {
+                hasil = "Boleh Ngemil";
+            };
+            document.getElementById("hasil").innerHTML = hasil;
+        }
+    </script>
+</body>
+</html>

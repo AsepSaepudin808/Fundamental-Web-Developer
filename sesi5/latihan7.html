@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Event</title>
+</head>
+
+<body>
+    <button onclick="tampilkan_nama()" onmouseover="ganti_nama()">Klik Saya</button>
+    <div id="hasil"></div>
+    <script>
+        function tampilkan_nama() {
+            document.getElementById("hasil").innerHTML =
+                "<h3>Nama Saya adalah Fox</h3>";
+        };
+
+        function ganti_nama() {
+            document.getElementById("hasil").innerHTML = 
+                "<h1>Nama Saya adalah Hacktiv8</h1>";
+        };
+    </script>
+</body>
+
+</html>
